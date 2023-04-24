@@ -413,9 +413,9 @@
 - In this way, the last sheet of the workbook is also filled.
 - Finally, the Workbook is returned back to SServlet and written in the response.
 
-[universe_type_T]: ./img/Universe_Type_T.png
-[universe_type_I]: ./img/Universe_Type_I.png
-[universe_type_E]: ./img/Universe_Type_E.png
+[universe_type_T]: ./img/Universe_Type_T.PNG
+[universe_type_I]: ./img/Universe_Type_I.PNG
+[universe_type_E]: ./img/Universe_Type_E.PNG
 [omega_indexes_api]: ./img/Omega_Indexes_API.PNG
 [esg_derived_factor_names]: ./img/ESG_Derived_FactorNames.PNG
 [factorgroups_entities_api]: ./img/FactorGroups_Entities_API.PNG
