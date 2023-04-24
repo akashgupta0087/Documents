@@ -445,4 +445,4 @@
 [scalculationutil_loadrestore]: ./img/SCalculationUtil_LOAD_RESTORE.PNG
 [scalculationutil_getfunctions]: ./img/SCalculationUtil_getFunctions.PNG
 [ssequencedata_getfactors_sequence]: ./img/SSequenceData_getFactors_sequence.PNG
-[ssequencedata_getfactors_input]: ./img/SSequencedata_getFactors_input.PNG
+[ssequencedata_getfactors_input]: ./img/SSequenceData_getFactors_input.PNG
