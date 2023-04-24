@@ -53,7 +53,7 @@
 ### Getting Universe from Given Index
 
 - `TreeSet<Integer> getUniverse_entityIDs_I(SUniverseData ud)` method of class SDataAccess is called, which internally calls `HashSet<Integer> getEntityIDs_indexID` method of `com.iss.esg.omega.ODataAccess` class, where an API call is to omega is made to fetch the data.
-<br>
+<br/>
 ![omega_indexes_api]
 
 - After parsing the response, we get the list of entity Ids
