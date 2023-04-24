@@ -53,6 +53,7 @@
 ### Getting Universe from Given Index
 
 - `TreeSet<Integer> getUniverse_entityIDs_I(SUniverseData ud)` method of class SDataAccess is called, which internally calls `HashSet<Integer> getEntityIDs_indexID` method of `com.iss.esg.omega.ODataAccess` class, where an API call is to omega is made to fetch the data.
+<br>
 ![omega_indexes_api]
 
 - After parsing the response, we get the list of entity Ids
@@ -284,6 +285,7 @@
 - Inside this, Executors Service is intialized with threadcount of 5.
 - Now the entityIDs TreeSet is iterated, and for every entityId, SRunnable object is intialized and `call()` method is called by the worker thread.
 - Inside call() method, `static SEntityData process(int sequenceID, int entityID)` method of `com.iss.esg.sequence.SProcessor` classs is called.
+  <br>
   ![srunnable_call]
   
 - Inside `process` method, data from all the caches is loaded and `process` method of `SSequenceData` is called.
@@ -310,6 +312,7 @@
   - Else ***SCalculationUtil2's** `String evaluate(TreeMap<String, Object> values, String formula)`*
   - Inside *SCalculationUtil's evaluate* method :
     + `String REPLACE(String s)` method of the same class is called, which replaces the key in the given string with the value from *REPLACE's Map*
+	<br>
         ![scalculationutil_replace]
     + *values Map* is iterated and for each label is replaced with its appropriate value
     + After iteration is done, `String RESTORE(String s)` method of the same class is called
@@ -356,12 +359,14 @@
   - Also **REPLACE** and **RELOAD**, these two `TreeMap<String, String>` are also initialized
   - REPLACE : 
       + `TreeMap<String, String> LOAD_REPLACE()` method is called, which internally calls `ArrayList<String> getFunctions()` method of the same class.
+	<br>
       ![scalculationutil_loadreplace]
 
         ![scalculationutil_getfunctions]
 
   - RESTORE : 
       + `TreeMap<String, String> LOAD_RESTORE()` method is called, which internally calls `ArrayList<String> getFunctions()` method of the same class.
+	<br>
       ![scalculationutil_loadrestore]
 
 
